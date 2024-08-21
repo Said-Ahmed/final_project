@@ -1,0 +1,29 @@
+docker system prune (Очистка)
+docker exec -it django-deploy-container python manage.py migrate
+
+Containers
+
+1. docker run --name nginx-container nginx (Install container)
+2. docker container ls
+3. docker container ls -a
+4. docker container stop nginx-container (Остановка контейнера)
+5. docker container start nginx-container
+6. docker container rm nginx-container
+7. docker run -p 8000:80 --name nginx-container nginx
+8. docker exec -it nginx-container ls
+9. docker exec -it nginx-container bash
+10. docker
+
+Image
+1. docker image <команда>
+2. docker image ls
+3. docker image rm nginx:latest
+4. docker image build -t django-deploy-image:0.1
+
+
+Docker-compose
+1. sudo apt install docker-compose
+2. docker compose down
+3. docker compose --build
+
+Volumes
